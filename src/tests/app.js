@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const { obterUsuarioPorId, criarAgendamento, obterAgendamentosPorUsuarioId } = require('./db');
 
-// Middleware para parsear JSON
+
 app.use(express.json());
 
 // Rota para obter um usuário

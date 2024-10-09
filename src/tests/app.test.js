@@ -46,8 +46,8 @@ describe('Testes para Agendamentos', () => {
     });
 
     test('5 - deve retornar agendamentos em um intervalo de datas', async () => {
-        const agendamentos = await getAgendamentosPorIntervaloDeDatas('2024-10-15', '2024-10-20');
-        expect(agendamentos).toHaveLength(2); // Marcos e Ana
+        const agendamentos = await getAgendamentosPorIntervaloDeDatas('2024-10-15', '2024-10-20', '2024-10-18');
+        expect(agendamentos).toHaveLength(3); // Marcos, Ana e João
     });
 
     test('6 - deve atualizar um agendamento corretamente', async () => {

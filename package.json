@@ -9,7 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest"
-    
   },
   "dependencies": {
     "express": "^4.21.1",
